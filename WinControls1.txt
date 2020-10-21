@@ -1,0 +1,42 @@
+WinControls1
+
+Form2 frm = new form2( )
+ frm.Show( ) ------> frm.Close( )
+
+Show( ) : 창 하나를 맨위로 활성시켜줌
+Close( ) : 인스턴스폼 자체를 꺼버리는것
+
+윈폼 속성
+StartPosition : 켰을때 창위지
+formBorderStyle : 창 크기조절이나 고정 등 스타일 
+SizeGripStyle : 창조절커서 스타일
+ControlBox : 창상단에 버튼 없어짐
+Cursor : 마우스커서 바꾸기
+MaximumSize, MinimumSize : 창크기조절이 가능할때 창크기 최소,최대 조절가능
+Opacity : 투명도조절
+TopMost : 포커스를 잃어도 항상 창을 앞에 띄움
+
+Tag : 오브젝트 타입, 뭔가를 저장하고 각각 구분하고 싶을때, 뭔가를 저장하고 싶을때
+	모든 컨트롤이 가지고있는 공통 속성임(유일함)
+
+
+윈폼 이벤트핸들러
+Load : 
+Activated : 윈도에 여러개의 창이 있을때 다른창이 활성화 돼 있다가 이번창이 활성화 될때
+               엄청 자주 활성화 되기때문에 사용조심해야함
+Shown : 처음에 창을 보여줄때만 실행
+
+버튼 속성
+Margin : 버튼밖의 간격을 얼마나 띄우겠냐
+Padding : 버튼안의 간격을 얼마나 띄우겠냐
+
+동적버튼 만들기
+Button btn1 = new Button();
+btn1.Text = "동적버튼";
+btn1.Location = new Point(50, 50);
+btn1.Size = new Size(100, 50);
+this.Controls.Add(btn1); //this는 폼 폼에다가 이렇게 동적버튼 btn1을 추가
+
+텍스트박스 이벤트 핸들러
+KeyPress : 키가 눌릴때마다 실행되게 하는걸 할떄 좋음
+Leave : 쓴걸 전체 적용해서 시킬때 좋음
