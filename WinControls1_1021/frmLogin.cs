@@ -98,7 +98,7 @@ namespace WinControls1_1021
 
 		private void frmLogin_Activated(object sender, EventArgs e)
 		{
-			MessageBox.Show("Activate");
+			//MessageBox.Show("Activate");
 		}
 
 		private void frmLogin_Shown(object sender, EventArgs e)
