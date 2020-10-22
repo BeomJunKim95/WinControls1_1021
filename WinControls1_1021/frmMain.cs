@@ -42,5 +42,12 @@ namespace WinControls1_1021
 			frmTextBox frm = new frmTextBox();
 			frm.Show();
 		}
+
+		private void 체크박스ToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			frmCheckBox frm = new frmCheckBox();
+			frm.MdiParent = this;
+			frm.Show();
+		}
 	}
 }

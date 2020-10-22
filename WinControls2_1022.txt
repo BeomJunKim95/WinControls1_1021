@@ -1,0 +1,18 @@
+WinControls2_1022
+
+label속성
+BackColor.transparent : 투명색 자동으로 색을 따라감
+visible : 보여주는지 숨기는지
+
+Button 속성
+DialogResult
+ImageList : ImageList컨트롤을 추가해 버튼에 이미지를 추가할수있음
+	  이미지 크기 조절을 맘대로 할수있는 장점이있음
+
+CheckBox
+
+checkBox1.checkd = 체크여부 확인
+
+RadioButton
+
+CheckedChanged : if else문이 꼭 들어가 줘야함 

@@ -32,6 +32,7 @@
 			this.회원관리ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.로그아웃ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.텍스트박스ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.체크박스ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -40,7 +41,8 @@
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.회원관리ToolStripMenuItem,
             this.로그아웃ToolStripMenuItem,
-            this.텍스트박스ToolStripMenuItem});
+            this.텍스트박스ToolStripMenuItem,
+            this.체크박스ToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -67,6 +69,13 @@
 			this.텍스트박스ToolStripMenuItem.Text = "텍스트박스";
 			this.텍스트박스ToolStripMenuItem.Click += new System.EventHandler(this.텍스트박스ToolStripMenuItem_Click);
 			// 
+			// 체크박스ToolStripMenuItem
+			// 
+			this.체크박스ToolStripMenuItem.Name = "체크박스ToolStripMenuItem";
+			this.체크박스ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+			this.체크박스ToolStripMenuItem.Text = "체크박스";
+			this.체크박스ToolStripMenuItem.Click += new System.EventHandler(this.체크박스ToolStripMenuItem_Click);
+			// 
 			// frmMain
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -90,5 +99,6 @@
 		private System.Windows.Forms.ToolStripMenuItem 회원관리ToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem 로그아웃ToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem 텍스트박스ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem 체크박스ToolStripMenuItem;
 	}
 }

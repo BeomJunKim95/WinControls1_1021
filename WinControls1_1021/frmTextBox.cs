@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -93,6 +94,22 @@ namespace WinControls1_1021
 		{
 			//꺼지고 난뒤
 			MessageBox.Show("closed");
+		}
+
+		private void frmTextBox_Load(object sender, EventArgs e)
+		{
+			this.BackColor = Color.White;
+			label4.Text = "홍길동";
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			//MessageBox.Show(label4.Text);
+			button1.Cursor = Cursors.WaitCursor;
+
+			System.Threading.Thread.Sleep(2000);
+
+			button1.Cursor = Cursors.Default;
 		}
 	}
 }
